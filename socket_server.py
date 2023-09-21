@@ -33,7 +33,7 @@ def send_infinitely():
         print("sent data")
         reset += 1
         reset %= 100
-        sio.sleep(20)
+        sio.sleep(5)
 
 
 @sio.event
