@@ -2,7 +2,7 @@ import socketio
 import json
 import datetime
 
-sio = socketio.Server(always_connect=True)
+sio = socketio.Server(cors_allowed_origins="*", always_connect=True)
 app = socketio.WSGIApp(sio)
 
 reset = 0
